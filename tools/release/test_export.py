@@ -33,7 +33,7 @@ class ExportTests(unittest.TestCase):
         # No global or system git configuration; a fixed test identity.
         self.env = dict(os.environ, GIT_CONFIG_GLOBAL=os.devnull, GIT_CONFIG_NOSYSTEM="1",
                         MILIONAR_GUARD_FORBID=FAKE_NEEDLE)
-        self.env.pop("MILIONAR_GUARD_ALLOW", None)
+        # $MILIONAR_GUARD_ALLOW is kept: CI sets it for its runner's login name.
         for rel in SCRIPTS:
             dst = os.path.join(self.src, rel)
             os.makedirs(os.path.dirname(dst), exist_ok=True)
