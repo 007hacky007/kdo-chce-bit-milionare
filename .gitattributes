@@ -1,0 +1,11 @@
+# Line endings are fixed per type so that a checkout with core.autocrlf (the
+# Windows CI image) gets the same bytes as everywhere else.
+* text=auto eol=lf
+*.sh text eol=lf
+*.py text eol=lf
+# Inno Setup script and its licence pages: CRLF with a UTF-8 BOM, kept byte for byte.
+*.iss -text
+packaging/windows/license-*.txt -text
+# Generated; some upstream licence texts in it contain CR.
+packaging/licenses/rust-crates.html -text
+*.ttf binary

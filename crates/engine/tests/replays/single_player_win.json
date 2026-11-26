@@ -1,0 +1,12 @@
+{
+  "seed": 7,
+  "quit_at": 200000,
+  "rules": [
+    { "screen": "PlayerCount", "entry": 1, "delay": 30, "key": "1" },
+    { "screen": "PickMillionaire", "entry": 1, "delay": 100, "key": "P" },
+    { "screen": "BeatKeys", "entry": 1, "delay": 45, "key": "SPACE" },
+    { "screen": "AnswerPhase", "entry": "every", "delay": 3, "key": "correct" }
+  ],
+  "punch": ["RIGHT", "LEFT", "UP", "DOWN"],
+  "stop": { "screen": "PlayAgain", "delay": 30 }
+}

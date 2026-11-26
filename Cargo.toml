@@ -1,0 +1,32 @@
+[workspace]
+resolver = "3"
+members = ["crates/*", "apps/*"]
+
+[workspace.package]
+edition = "2024"
+license = "GPL-3.0-only"
+rust-version = "1.100"
+
+[workspace.dependencies]
+thiserror = "2"
+encoding_rs = "0.8"
+sha2 = "0.10"
+tempfile = "3"
+dirs = "6"
+fs4 = "1"
+serde_json = "1"
+clap = { version = "4", features = ["derive"] }
+png = "0.18"
+jpeg-encoder = "0.7"
+zune-jpeg = "0.5"
+zune-core = "0.5"
+windows-sys = "0.61"
+rustix = "1"
+
+# The upscale corpus test encodes about 2450 frames at 1920x1440; unoptimised
+# image and hash code makes it take tens of minutes.
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.dev.package.upscale]
+opt-level = 3

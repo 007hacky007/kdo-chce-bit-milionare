@@ -1,0 +1,26 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [macos-14, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo fmt --check
+      - run: cargo clippy --workspace --all-targets -- -D warnings
+      - run: cargo test --workspace
+  windows-app:
+    # Release build of the desktop app (SDL 3 built from the vendored source with CMake
+    # and MSVC) for manual testing; the exe is kept as a workflow artifact.
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: cargo build --release -p milionar
+      - uses: actions/upload-artifact@v4
+        with:
+          name: milionar-windows-x64
+          path: target/release/milionar.exe

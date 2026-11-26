@@ -1,0 +1,26 @@
+﻿Milionar
+========
+
+Milionar je neoficiální svobodná reimplementace herního enginu. Neobsahuje
+žádná herní data: při prvním spuštění je naimportujete z vlastního disku.
+
+Milionar je svobodný software pod licencí GNU General Public License verze 3
+(soubor LICENSE ve složce instalace). Součásti třetích stran a jejich licence
+jsou uvedeny v THIRD_PARTY_NOTICES.md a ve složce "licenses".
+
+Instalátor nainstaluje také upscaler Real-ESRGAN (složka "upscaler"; licence
+MIT a BSD) a soubor vcomp140.dll od Microsoftu, běhovou knihovnu OpenMP
+Visual C++, kterou upscaler potřebuje. vcomp140.dll není open-source software.
+Jeho instalací souhlasíte s jeho podmínkami (plné znění v
+licenses\vcomp140-Microsoft-redistributable.txt, anglicky):
+
+1. Smíte jej používat jen jako součást programu Milionar, v systému Windows.
+2. Nesmíte jej upravovat, zpětně analyzovat, dekompilovat ani
+   disassemblovat, kromě případů, kdy to výslovně dovoluje platný zákon.
+3. Nesmíte jej šířit odděleně od programu Milionar ani z něj odstraňovat
+   upozornění Microsoftu.
+4. Microsoft a jeho dodavatelé si ponechávají všechna práva, která zde nejsou
+   výslovně udělena.
+5. Je poskytován "tak, jak je", bez záruky, v rozsahu povoleném zákonem.
+
+Milionar je poskytován BEZ JAKÉKOLI ZÁRUKY, v rozsahu povoleném zákonem.

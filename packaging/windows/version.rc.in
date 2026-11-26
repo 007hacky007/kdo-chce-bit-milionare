@@ -1,0 +1,35 @@
+// Version resource of milionar.exe. apps/milionar/build.rs renders this into
+// OUT_DIR/version.rc (@VERSION@ = package version, @VERSION_COMMA@ = the same
+// as four comma-separated numbers) and app.rc includes it. When the build sets
+// MILIONAR_WINDOWS_ICON (packaging/windows/build-tree.sh does), build.rs also
+// appends the icon resource after this text.
+// 16 = RT_VERSION.
+
+1 VERSIONINFO
+FILEVERSION @VERSION_COMMA@
+PRODUCTVERSION @VERSION_COMMA@
+FILEFLAGSMASK 0x3f
+FILEFLAGS 0x0
+FILEOS 0x40004
+FILETYPE 0x1
+FILESUBTYPE 0x0
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "007hacky007"
+            VALUE "FileDescription", "Milionar"
+            VALUE "FileVersion", "@VERSION@"
+            VALUE "InternalName", "milionar"
+            VALUE "LegalCopyright", "Copyright (c) 2026 007hacky007. GPL-3.0-only."
+            VALUE "OriginalFilename", "milionar.exe"
+            VALUE "ProductName", "Milionar"
+            VALUE "ProductVersion", "@VERSION@"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END

@@ -1,0 +1,50 @@
+Microsoft Visual C++ OpenMP runtime (vcomp140.dll)
+==================================================
+
+File:      upscaler/vcomp140.dll
+Version:   14.x (file date 2022-01-05), 182704 bytes
+SHA-256:   8f72ef2e483465444b2059fc6744d6cb22cd8d8a27f6fa56befd2a42dcd0f78b
+Copyright: (c) Microsoft Corporation. All rights reserved.
+
+This file is not open-source software and is not covered by the GNU General
+Public License of Milionar or by any other licence in this folder. It is the
+OpenMP runtime of Microsoft Visual C++, which the Real-ESRGAN upscaler runner
+(upscaler/realesrgan-ncnn-vulkan.exe) needs to run. It is shipped unmodified,
+byte for byte as it is in the upstream runner release
+realesrgan-ncnn-vulkan-20220424-windows.zip (Real-ESRGAN v0.2.5.0,
+https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0).
+
+Microsoft licenses vcomp140.dll as "Distributable Code" of Visual Studio
+(the Visual C++ runtime files in VC\redist, which includes the
+Microsoft.VC14x.OpenMP folder). It may be redistributed, unmodified, only as
+part of a program, under the Microsoft Software License Terms of Visual Studio:
+
+  Distributable code list ("REDIST list") of Visual Studio 2022:
+    https://learn.microsoft.com/visualstudio/releases/2022/redistribution
+  Visual Studio license terms:
+    https://visualstudio.microsoft.com/license-terms/
+
+The debug variant vcomp140d.dll, which is in the same upstream zip, is not
+redistributable and is not included.
+
+Terms for you, the user of this copy of vcomp140.dll
+----------------------------------------------------
+
+Microsoft's terms require that people who receive Distributable Code agree to
+terms that protect it at least as much as Microsoft's own licence. By
+installing or using this copy of vcomp140.dll you agree that:
+
+1. You may use it only as part of Milionar, to run the upscaler runner that
+   comes with it, on Microsoft Windows.
+2. You may not modify it, and you may not reverse engineer, decompile or
+   disassemble it, except and only to the extent that applicable law expressly
+   permits this despite this limitation.
+3. You may not distribute it separately from Milionar, and you may not remove
+   or alter Microsoft's copyright notices or other proprietary notices in it.
+4. Microsoft Corporation and its suppliers keep all rights to it that are not
+   expressly granted here. Microsoft's name and trademarks are not licensed to
+   you and are not used to endorse Milionar, which is not a Microsoft product.
+5. It is provided "as is", without warranty of any kind, express or implied,
+   to the extent permitted by law. Neither Microsoft nor the distributor of
+   Milionar is liable for any damages arising from its use, to the extent
+   permitted by law.

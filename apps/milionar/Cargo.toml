@@ -1,0 +1,28 @@
+[package]
+name = "milionar"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+engine = { path = "../../crates/engine" }
+render = { path = "../../crates/render" }
+gamedata = { path = "../../crates/gamedata" }
+setup = { path = "../../crates/setup" }
+upscale = { path = "../../crates/upscale" }
+clap.workspace = true
+serde = { version = "1", features = ["derive"] }
+serde_json.workspace = true
+sdl3 = { version = "0.22", features = ["build-from-source-static"] }
+png = { workspace = true, optional = true }
+
+[features]
+# Scripted input and window captures for unattended checks (see src/testhook.rs).
+test-hooks = ["dep:png"]
+
+[dev-dependencies]
+tempfile.workspace = true
+fs4.workspace = true
+formats = { path = "../../crates/formats" }

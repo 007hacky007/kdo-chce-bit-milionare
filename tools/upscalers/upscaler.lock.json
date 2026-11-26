@@ -1,0 +1,84 @@
+{
+  "schema_version": 1,
+  "note": "Pins for tools/fetch-upscaler.sh and crates/upscale/src/runner.rs (checked by the upscale tests). Binaries, models and archives live under the gitignored tools/upscalers/ and are never committed.",
+  "release": {
+    "name": "Real-ESRGAN v0.2.5.0, realesrgan-ncnn-vulkan 20220424",
+    "url": "https://github.com/xinntao/Real-ESRGAN/releases/tag/v0.2.5.0",
+    "model_commit": "685d429c81888252bdb10f56c7754baededc3823",
+    "runner_source_commit": "37026f49824c5cf84062e7c6a5dd71445dcf610f",
+    "runner_source_url": "https://github.com/xinntao/Real-ESRGAN-ncnn-vulkan/tree/37026f49824c5cf84062e7c6a5dd71445dcf610f"
+  },
+  "parameters": {
+    "model": "realesr-animevideov3",
+    "scale": 3,
+    "tile": 128,
+    "tta": false,
+    "gpu": 0,
+    "format": "png",
+    "args": "-i <in> -o <out> -n realesr-animevideov3 -s 3 -t 128 -g 0 -f png -m <dir>/models"
+  },
+  "runners": {
+    "macos": {
+      "archive": {
+        "name": "realesrgan-ncnn-vulkan-20220424-macos.zip",
+        "url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-macos.zip",
+        "sha256": "e0ad05580abfeb25f8d8fb55aaf7bedf552c375b5b4d9bd3c8d59764d2cc333a",
+        "bytes": 51817124
+      },
+      "dir": "tools/upscalers/realesrgan-20220424",
+      "runner": {
+        "path": "realesrgan-ncnn-vulkan",
+        "sha256": "c1c35d92079085de96b9d547fd7e4464bc8a2e9ccf28d7b8c712d72ade91b7cc",
+        "bytes": 26787080,
+        "note": "universal (x86_64 + arm64); MoltenVK linked statically. The zip does not keep the executable bit."
+      },
+      "models": {
+        "realesr-animevideov3-x3.param": "d1a5755008791d09b57e3425fc9dd0bd26b00fdf79c606210bc0e693f8230881",
+        "realesr-animevideov3-x3.bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d"
+      }
+    },
+    "windows": {
+      "archive": {
+        "name": "realesrgan-ncnn-vulkan-20220424-windows.zip",
+        "url": "https://github.com/xinntao/Real-ESRGAN/releases/download/v0.2.5.0/realesrgan-ncnn-vulkan-20220424-windows.zip",
+        "sha256": "abc02804e17982a3be33675e4d471e91ea374e65b70167abc09e31acb412802d",
+        "bytes": 45474481
+      },
+      "dir": "tools/upscalers/realesrgan-20220424-windows",
+      "runner": {
+        "path": "realesrgan-ncnn-vulkan.exe",
+        "sha256": "07e49f7cbb4ede01ae4dd4c399d3a7e5846e3d2085c3128eff881e55cb7b1a0c",
+        "bytes": 6161408,
+        "note": "x86_64; needs the system Vulkan loader (vulkan-1.dll) from the GPU driver."
+      },
+      "extra_files": {
+        "vcomp140.dll": "8f72ef2e483465444b2059fc6744d6cb22cd8d8a27f6fa56befd2a42dcd0f78b"
+      },
+      "models": {
+        "realesr-animevideov3-x3.param": "d1a5755008791d09b57e3425fc9dd0bd26b00fdf79c606210bc0e693f8230881",
+        "realesr-animevideov3-x3.bin": "548a36f9c3f4ab8da56cd3b13badf23968bee207b396dad14d04b830e5f2ab2d"
+      }
+    }
+  },
+  "licenses": {
+    "note": "The release zips contain no licence texts. These are the upstream texts of the projects in the runner; sources and tags are in 'sources'. All of the listed components are statically linked into the runner except Microsoft vcomp140.dll (shipped as a separate file in the Windows zip). THIRD_PARTY_NOTICES.md lists them all. Runner and models are bundled only in the release packages, never committed.",
+    "files": {
+      "tools/upscalers/licenses/runner-MIT.txt": "5abb941454de437b0e90d78dcb72e3688f74e14bcd4e24393273cb5cd0e9c937",
+      "tools/upscalers/licenses/Real-ESRGAN-BSD-3-Clause.txt": "4a699ec4863d96a91fc265948a0c90033f7e8735d515524dcf3444736406e0c2",
+      "tools/upscalers/licenses/ncnn-BSD-3-Clause.txt": "6495f972a09ad7f64ccd953e79adba91a93d862edc7135e6d95210bbf4002a01",
+      "tools/upscalers/licenses/libwebp-BSD-3-Clause.txt": "5aec868f669e384a22372a4e8a1a6cd7d44c64cd451f960ca69cc170d1e13acf",
+      "tools/upscalers/licenses/MoltenVK-Apache-2.0.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "tools/upscalers/licenses/glslang-mixed-BSD-3-Clause-Apache-2.0.txt": "adb783e734e906d1f46db5df29991dbde84bdb0ceab502ac2febb44fe3c2b5f4",
+      "tools/upscalers/licenses/LLVM-OpenMP-Apache-2.0-LLVM-exception.txt": "fdad1758a9e1f9d5a81e18879b3406772115edc92c24bfa36b70c654f325e8e4"
+    },
+    "sources": {
+      "tools/upscalers/licenses/glslang-mixed-BSD-3-Clause-Apache-2.0.txt": "https://raw.githubusercontent.com/KhronosGroup/glslang/11.8.0/LICENSE.txt",
+      "tools/upscalers/licenses/LLVM-OpenMP-Apache-2.0-LLVM-exception.txt": "https://raw.githubusercontent.com/llvm/llvm-project/llvmorg-11.1.0/openmp/LICENSE.txt",
+      "tools/upscalers/licenses/MoltenVK-Apache-2.0.txt": "https://raw.githubusercontent.com/KhronosGroup/MoltenVK/v1.1.8/LICENSE (identical sha256)",
+      "tools/upscalers/licenses/runner-MIT.txt": "https://raw.githubusercontent.com/xinntao/Real-ESRGAN-ncnn-vulkan/37026f49824c5cf84062e7c6a5dd71445dcf610f/LICENSE (tag v0.2.0, the runner source commit; identical sha256)",
+      "tools/upscalers/licenses/Real-ESRGAN-BSD-3-Clause.txt": "https://raw.githubusercontent.com/xinntao/Real-ESRGAN/685d429c81888252bdb10f56c7754baededc3823/LICENSE (tag v0.2.5.0, the release of the runner zips; identical sha256)",
+      "tools/upscalers/licenses/ncnn-BSD-3-Clause.txt": "https://raw.githubusercontent.com/Tencent/ncnn/6125c9f47cd14b589de0521350668cf9d3d37e3c/LICENSE.txt (commit of the src/ncnn submodule at the runner source commit; identical sha256)",
+      "tools/upscalers/licenses/libwebp-BSD-3-Clause.txt": "https://raw.githubusercontent.com/webmproject/libwebp/8ea81561d2fdd382da60f57958741a7c23a18eb6/COPYING (commit of the src/libwebp submodule at the runner source commit; identical sha256)"
+    }
+  }
+}

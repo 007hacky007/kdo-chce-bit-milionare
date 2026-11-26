@@ -1,0 +1,133 @@
+SDL 3.4.20 licence texts, shipped with Milionar
+================================================
+
+Milionar links SDL 3.4.20 statically. The SDL source comes from the sdl3-src
+3.4.20 crate on crates.io (checksum in Cargo.lock), built with CMake by sdl3-sys.
+The texts below are copied unchanged from that crate:
+
+  SDL/LICENSE.txt                    sha256 1c040b8271b37e5076359f8fd54240e371114112924d2df81ef87c7d6a1dfdfd
+  SDL/src/hidapi/LICENSE.txt         sha256 7d3b087c34f35d4d538e3bcddd1ff8f66e92f9ef336881999482800ddf840913
+  SDL/src/hidapi/LICENSE-bsd.txt     sha256 30eb1bef29b46f8ba7ab8b416035dbd93cb034a45481dd97815b944284582cd2
+  SDL/src/video/yuv2rgb/LICENSE      sha256 f7d74004cc75778cae46c5f0139f244d67c07ef64cf51937e8272352197dcb18
+
+HIDAPI is part of SDL's joystick support and may be used under one of three
+licences; Milionar uses it under the BSD-style licence below.
+
+SDL's own math library (SDL/src/libm, from FreeBSD/SunPro) carries the Sun
+Microsystems notice of its source headers, reproduced at the end (text as in
+SDL/src/libm/e_atan2.c and the other files of that folder).
+
+------------------------------------------------------------------------------
+SDL (SDL/LICENSE.txt, zlib licence)
+------------------------------------------------------------------------------
+
+Copyright (C) 1997-2026 Sam Lantinga <slouken@libsdl.org>
+  
+This software is provided 'as-is', without any express or implied
+warranty.  In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+  
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required. 
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+
+
+------------------------------------------------------------------------------
+HIDAPI (SDL/src/hidapi/LICENSE.txt)
+------------------------------------------------------------------------------
+
+HIDAPI can be used under one of three licenses.
+
+1. The GNU General Public License, version 3.0, in LICENSE-gpl3.txt
+2. A BSD-Style License, in LICENSE-bsd.txt.
+3. The more liberal original HIDAPI license. LICENSE-orig.txt
+
+The license chosen is at the discretion of the user of HIDAPI. For example:
+1. An author of GPL software would likely use HIDAPI under the terms of the
+GPL.
+
+2. An author of commercial closed-source software would likely use HIDAPI
+under the terms of the BSD-style license or the original HIDAPI license.
+
+
+------------------------------------------------------------------------------
+HIDAPI BSD-style licence (SDL/src/hidapi/LICENSE-bsd.txt)
+------------------------------------------------------------------------------
+
+Copyright (c) 2010, Alan Ott, Signal 11 Software
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+    * Redistributions of source code must retain the above copyright notice,
+      this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above copyright
+      notice, this list of conditions and the following disclaimer in the
+      documentation and/or other materials provided with the distribution.
+    * Neither the name of Signal 11 Software nor the names of its
+      contributors may be used to endorse or promote products derived from
+      this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+------------------------------------------------------------------------------
+yuv2rgb (SDL/src/video/yuv2rgb/LICENSE, BSD-3-Clause)
+------------------------------------------------------------------------------
+
+Copyright (c) 2016, Adrien Descamps
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+* Redistributions of source code must retain the above copyright notice, this
+  list of conditions and the following disclaimer.
+
+* Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+
+* Neither the name of yuv2rgb nor the names of its
+  contributors may be used to endorse or promote products derived from
+  this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+------------------------------------------------------------------------------
+SDL libm (SDL/src/libm/*.c, *.h)
+------------------------------------------------------------------------------
+
+Copyright (C) 1993 by Sun Microsystems, Inc. All rights reserved.
+
+Developed at SunPro, a Sun Microsystems, Inc. business.
+Permission to use, copy, modify, and distribute this
+software is freely granted, provided that this notice
+is preserved.

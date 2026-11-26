@@ -1,0 +1,23 @@
+*.iso
+*.ISO
+/work/
+/target/
+/build/
+/tools/cache/
+/tools/downloads/
+# Upscaler binaries, models and downloads; licences and the lock are tracked.
+/tools/upscalers/*
+!/tools/upscalers/licenses/
+!/tools/upscalers/upscaler.lock.json
+!/tools/upscalers/innosetup.lock.json
+/analysis/original/
+.DS_Store
+__pycache__/
+*.smk
+*.dat
+*.wav
+Milionar.exe
+Smackw32.dll
+/dist/
+/packaging/.guard-forbid.local
+/tools/release/export-exclude.local

@@ -1,0 +1,25 @@
+﻿Milionar
+========
+
+Milionar is an unofficial, free reimplementation of the game engine. It
+contains no game data: you import the data from your own disc when you first
+start it.
+
+Milionar is free software under the GNU General Public License, version 3
+(the file LICENSE in the install folder). Third-party parts and their licences
+are listed in THIRD_PARTY_NOTICES.md and in the folder "licenses".
+
+The installer also installs the Real-ESRGAN upscaler (folder "upscaler"; MIT
+and BSD licences) and Microsoft's vcomp140.dll, the Visual C++ OpenMP runtime
+the upscaler needs. vcomp140.dll is not open-source software. By installing
+it you agree to its terms (full text in licenses\vcomp140-Microsoft-redistributable.txt):
+
+1. You may use it only as part of Milionar, on Microsoft Windows.
+2. You may not modify, reverse engineer, decompile or disassemble it, except
+   to the extent that applicable law expressly permits this.
+3. You may not distribute it separately from Milionar or remove Microsoft's
+   notices from it.
+4. Microsoft and its suppliers keep all rights not expressly granted here.
+5. It is provided "as is", without warranty, to the extent permitted by law.
+
+Milionar comes with ABSOLUTELY NO WARRANTY, to the extent permitted by law.

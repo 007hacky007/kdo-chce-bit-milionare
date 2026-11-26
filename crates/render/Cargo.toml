@@ -1,0 +1,16 @@
+[package]
+name = "render"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+ab_glyph = "0.2.32"
+ttf-parser = "0.25"
+thiserror.workspace = true
+upscale = { path = "../upscale" }
+
+[dev-dependencies]
+tempfile.workspace = true

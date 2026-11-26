@@ -1,0 +1,25 @@
+{
+  "seed": 11,
+  "quit_at": 150000,
+  "rules": [
+    { "screen": "PlayerCount", "entry": 1, "delay": 30, "key": "4" },
+    { "screen": "PickMillionaire", "entry": 1, "delay": 100, "key": "P" },
+    { "screen": "PickMillionaire", "entry": 1, "delay": 220, "key": "P" },
+    { "screen": "PickMillionaire", "entry": 1, "delay": 340, "key": "P" },
+    { "screen": "PickMillionaire", "entry": 1, "delay": 460, "key": "P" },
+    { "screen": "Keys", "entry": 1, "delay": 110, "key": "SPACE" },
+    { "screen": "BeatKeys", "entry": 1, "delay": 45, "key": "SPACE" },
+    { "screen": "AnswerPanel", "entry": "every", "delay": 2, "key": ["Q", "V", "M", "P"],
+      "repeat": 1, "times": 4 },
+    { "screen": "AnswerPhase", "entry": 2, "delay": 1, "key": "N" },
+    { "screen": "LifelineMenu", "entry": 1, "delay": 10, "key": "P" },
+    { "screen": "PickPassTarget", "entry": "every", "delay": 5, "key": ["1", "2", "3", "4"],
+      "repeat": 3 },
+    { "screen": "AnswerPhase", "entry": "every", "delay": 4,
+      "key": ["correct", "correct", "wrong", "correct", "correct"] },
+    { "screen": "PickVictim", "entry": "every", "delay": 6, "key": ["1", "2", "3", "4"],
+      "repeat": 4 }
+  ],
+  "punch": ["RIGHT", "UP", "LEFT", "DOWN"],
+  "stop": { "screen": "PlayAgain", "delay": 30 }
+}

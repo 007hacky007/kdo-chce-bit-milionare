@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "note": "Pin of the Inno Setup compiler used by packaging/windows/build-installer.sh (wine route) to compile packaging/windows/milionar.iss. Official release of the Inno Setup project; the installer is downloaded into the gitignored tools/cache/, checked against sha256 and bytes, and never committed.",
+  "innosetup": {
+    "version": "6.7.4",
+    "name": "innosetup-6.7.4.exe",
+    "url": "https://github.com/jrsoftware/issrc/releases/download/is-6_7_4/innosetup-6.7.4.exe",
+    "release": "https://github.com/jrsoftware/issrc/releases/tag/is-6_7_4",
+    "sha256": "a549929319f9120716677c685535ca4671e4b937b5fdc87e2585f32d8eb30e8c",
+    "bytes": 10604576,
+    "install_dir": "C:\\InnoSetup6",
+    "install_args": "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /CURRENTUSER /NOICONS /DIR=C:\\InnoSetup6"
+  }
+}
