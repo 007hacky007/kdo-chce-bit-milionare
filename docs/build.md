@@ -162,7 +162,7 @@ The exported tree builds and tests on its own (`cargo build --workspace --locked
 ## Release workflow
 
 `.github/workflows/release.yml` runs on a `v*` tag or by hand. It builds the DMG on
-`macos-14`, cross-builds the Windows install tree on `macos-14` with the llvm-mingw pinned
+`macos-15`, cross-builds the Windows install tree on `macos-15` with the llvm-mingw pinned
 above, then compiles the installer on `windows-latest` with Inno Setup 6 (the preinstalled
 one, else the pinned version), and keeps the DMG, the setup exe and their `.sha256` files
 as workflow artifacts. It checks that `rust-crates.html` is up to date first. It does not

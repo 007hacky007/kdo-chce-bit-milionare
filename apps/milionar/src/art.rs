@@ -235,6 +235,8 @@ mod tests {
             panic!("{:?}", open_pack(d));
         };
         assert_eq!(p.len(), 1);
+        // Windows cannot replace a file that is still open.
+        drop(p);
         // A re-import changes the manifest: the pack is stale.
         imported(d, b"{\"again\": 1}");
         let st = open_pack(d);
