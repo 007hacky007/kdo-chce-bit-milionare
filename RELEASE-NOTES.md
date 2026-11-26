@@ -29,11 +29,11 @@ English): `docs/install.md`.
 
 ### Known limitations
 
-- **The Windows build has not yet been run on a real Windows machine.** It is
-  cross-compiled on macOS and checked statically (architecture, GUI subsystem, imported
-  DLLs, resources), and the installer is built, but the game itself, the import and the
-  upscaling have so far been played and tested on macOS only. Treat the Windows package
-  as a preview until that test is done.
+- **The Windows build is tested in a Windows 11 virtual machine only.** Installing (for
+  one user and for all users), the import, a full game, the options, two windows at once
+  and uninstalling work there. The enhanced graphics were made there only with a
+  software graphics driver (a few frames); a full run on a real graphics card is not
+  tested yet.
 - Neither package is signed by a paid certificate. macOS blocks the app on first start
   (right-click > Open, or `xattr -d com.apple.quarantine /Applications/Milionar.app`);
   Windows SmartScreen warns about the installer (More info > Run anyway).
@@ -58,8 +58,9 @@ z vašeho CD. Návod: `docs/install.md`.
 Funguje celá hra včetně hry více hráčů na jedné klávesnici, průvodce importem
 a volitelné vylepšené grafiky (trojnásobné rozlišení, přepínání klávesou F8).
 
-Známá omezení: **verze pro Windows zatím nebyla vyzkoušena na skutečném počítači
-s Windows**, hra byla dosud hraná a testovaná jen na macOS. Balíčky nejsou podepsané
+Známá omezení: **verze pro Windows je vyzkoušená jen ve virtuálním počítači
+s Windows 11**, vylepšená grafika tam jen se softwarovým ovladačem, ne se skutečnou
+grafickou kartou. Balíčky nejsou podepsané
 placeným certifikátem (macOS: pravé tlačítko > Otevřít; Windows: Další informace >
 Přesto spustit). Vylepšená grafika potřebuje grafickou kartu (ve Windows s ovladačem
 Vulkan). Podporované je jen vydání TopCD.
